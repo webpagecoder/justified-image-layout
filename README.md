@@ -1,6 +1,6 @@
 # Justified Image Layout
 
-A Javascript class to create a justified image gallery. It is very similar to what can be seen on sites like Flickr.com.
+A Javascript class to create a justified image gallery. It is very similar to what can be seen on sites like Flickr.com. The justified images gallery is also responsive to sizing changes, if desired.
 
 ![justified-layout-screenshot](https://user-images.githubusercontent.com/115098866/196555029-7edb128d-530c-4b76-85f1-7a7715d75530.png)
 
@@ -59,14 +59,14 @@ justifiedImageLayout.draw();
 ## Options are as follows:
 
 - smallSizeDir: Directory to prepend for images in justified gallery (default: '')
-- largeSizeDir: Directory to prepend for higher resolution images (for popup purposes) (default: '')
-- rowHeight: Height for each row (default: '150px')
-- padding: Padding between images (default: '10px')
+- largeSizeDir: Directory to prepend for higher resolution images (default: '')
+- rowHeight: Height for each row (default: 150px)
+- padding: Padding between images (default: 10px)
 - expandFinalImage: Expand the final image to take up the rest of the row if needed (default: true)
 - enableAutoLoad: Enable autoloading of images (default: true)
-- autoLoadAmount: Amount of images to autoload (default: 50);
-- onClickImage: Function to run upon image being clicked. This is where you might use something like bootstrap to display a modal - see the examples folder. (default: (imgName) => { })
+- autoLoadAmount: Amount of images to autoload (default: 50)
+- onClickImage: Function to run upon image being clicked. This is where you might use something like bootstrap to display a modal that shows the larger image - see the examples folder. (default: (imgName) => { })
 
 
 ## Live example
-You can view [https://slick.photos](https://slick.photos) to see a live version of JustifiedImageLayout.
+You can view [https://slick.photos](https://slick.photos) to see a live version of JustifiedImageLayout. The justified photos are also clickable. Larger versions of images are displayed in a pop-up modal.
